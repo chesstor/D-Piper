@@ -39,7 +39,7 @@ To make a D-Piper diagram just follow these steps:
   It is a self-explanatory file that shows all the options of the program.<br>
   It is essential to comply with the file format to avoid execution errors.<br>
 
-  The contents of this file are explained at the end of this document. Options that can be modified are shown in $\color{red}{red}$ , explanatory text and guidelines are shown in $\color{blue}{blue}$, and variable names in **_black_**.
+  The contents of this file are explained at the end of this document. Options that can be modified are shown in red, explanatory text and guidelines are shown in blue, and variable names in black.
 
 
 ![dibujo.svg](attachment:dibujo.svg)
