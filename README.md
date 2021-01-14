@@ -5,7 +5,8 @@ D-Piper is a free source code developed in Python 3 that allows to represent lar
 ## How does it work?
 To make a D-Piper diagram just follow these steps:
 1. **Prepare the file structure:** To do so, copy and unzip to the desired location the *D_Piper_v1.zip* file.<br>Keep the file structure as shown in the figure:
-<img width="60%" src="Images/Image1.png"/>
+<img width="60%" src="Images/Image1.png">
+
  * The input analytical data files must be saved in the *Data* folder. The sample files used in the article to make Figures 2, 3, 4 and 5 can be found in this folder.
  * The D-Piper diagrams will be saved in the *Graphics* folder.
  * The *pycache* folder is created automatically and it is required for the *D_Piper_v1.py* script to run successfully.
@@ -26,7 +27,7 @@ To make a D-Piper diagram just follow these steps:
       * TAB-separated ASCII file
       * It must contain ten columns:
       
-<img width="60%" src="Images/Image2.png"/>
+<img width="60%" src="Images/Image2.png">
 
 >*Identifier*: sample identification number.<br>
 >*Group*: Each sample can belong to a different group. Up to nine groups can be differentiated. Although no error will be shown, setting more groups will create overlap problems.<br>
@@ -41,10 +42,12 @@ To make a D-Piper diagram just follow these steps:
 
   The contents of this file are explained at the end of this document. Options that can be modified are shown in $\color{red}{red}$ , explanatory text and guidelines are shown in $\color{blue}{blue}$, and variable names in **_black_**.
 
-<img width="100%" src="Images/Image3.svg"/>    
+<img width="100%" src="Images/Image3.svg">    
 
 ## Authors
 All authors belong to IGME Geological Survey of Spain. C/Ríos Rosas 23, 28003 Madrid, Spain
+
+* M. González-Jiménez         miguel.gonzalez@igme.es
 
 * L. Moreno Merino            l.moreno@igme.es
 
@@ -52,7 +55,6 @@ All authors belong to IGME Geological Survey of Spain. C/Ríos Rosas 23, 28003 M
 
 * E. Díaz Losada              elisabeth.diaz@igme.es
 
-* M. González-Jiménez         miguel.gonzalez@igme.es
 
 ## Copyright
 License: GPLv3 
