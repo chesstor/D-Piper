@@ -31,9 +31,9 @@ The structure of the data file should be as follows:
       
 <img width="60%" style="text-align:center" src="Images/Image2.png">
 
-*Identifier*: sample identification number.
-*Group*: Each sample can belong to a different group. Up to nine groups can be differentiated. Although no error will be shown, setting more groups will create overlap problems.
-*Eight columns with analytical results*. The ion content should be expressed in mg/L (milligrams per liter) or ppm (parts per million).
+*Identifier*: sample identification number.<br>
+*Group*: Each sample can belong to a different group. Up to nine groups can be differentiated. Although no error will be shown, setting more groups will create overlap problems.<br>
+*Eight columns with analytical results*. The ion content should be expressed in mg/L (milligrams per liter) or ppm (parts per million).<br>
 
 
 ### 3. Preparing the _Options_ file:
@@ -44,7 +44,8 @@ It is essential to comply with the file format to avoid execution errors.
 
 The contents of this file are explained at the end of this document. Options that can be modified are shown in $\color{red}{red}$ , explanatory text and guidelines are shown in $\color{blue}{blue}$, and variable names in **_black_**.
 
-<img width="100%" src="Images/Image3.svg">    
+<img width="100%" src="Images/Image3.svg">
+
 ## Authors
 All authors belong to IGME Geological Survey of Spain. C/Ríos Rosas 23, 28003 Madrid, Spain
 
