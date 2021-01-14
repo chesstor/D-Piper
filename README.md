@@ -30,7 +30,7 @@ The structure of the data file should be as follows:
 * TAB-separated ASCII file
 * It must contain ten columns:
       
-<img width="60%" style="text-align:center" src="Images/Image2.png">
+<img width="60%" align="center" src="Images/Image2.png">
 
 *Identifier*: sample identification number.<br>
 *Group*: Each sample can belong to a different group. Up to nine groups can be differentiated. Although no error will be shown, setting more groups will create overlap problems.<br>
