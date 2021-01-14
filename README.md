@@ -26,8 +26,9 @@ The script always reads the drawing options from the *D_Piper_v1_options.txt* fi
 The data file must be in ASCII format and saved in the *Data* folder.
 The data file can have any name.
 The structure of the data file should be as follows:
-      * TAB-separated ASCII file
-      * It must contain ten columns:
+
+* TAB-separated ASCII file
+* It must contain ten columns:
       
 <img width="60%" style="text-align:center" src="Images/Image2.png">
 
@@ -42,7 +43,7 @@ The *D_Piper_v1_options.txt* file must be in ASCII format, separated by semicolo
 It is a self-explanatory file that shows all the options of the program.
 It is essential to comply with the file format to avoid execution errors.
 
-The contents of this file are explained at the end of this document. Options that can be modified are shown in <span style="color: red;">red</span> , explanatory text and guidelines are shown in $\color{blue}{blue}$, and variable names in **_black_**.
+The contents of this file are explained at the end of this document. Options that can be modified are shown in red, explanatory text and guidelines are shown in blue, and variable names in black.
 
 <img width="100%" src="Images/Image3.svg">
 
