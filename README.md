@@ -5,7 +5,8 @@ D-Piper is a free source code developed in Python 3 that allows to represent lar
 ## How does it work?
 To make a D-Piper diagram just follow these steps:
 1. **Prepare the file structure:** To do so, copy and unzip to the desired location the *D_Piper_v1.zip* file.<br>Keep the file structure as shown in the figure:
-<img width="60%" src="Images/Image1.png">
+<img width="60%" style="text-align:center" src="Images/Image1.png">
+
 
  * The input analytical data files must be saved in the *Data* folder. The sample files used in the article to make Figures 2, 3, 4 and 5 can be found in this folder.
  * The D-Piper diagrams will be saved in the *Graphics* folder.
@@ -27,7 +28,7 @@ To make a D-Piper diagram just follow these steps:
       * TAB-separated ASCII file
       * It must contain ten columns:
       
-<img width="60%" src="Images/Image2.png">
+<img width="60%" style="text-align:center" src="Images/Image2.png">
 
 >*Identifier*: sample identification number.<br>
 >*Group*: Each sample can belong to a different group. Up to nine groups can be differentiated. Although no error will be shown, setting more groups will create overlap problems.<br>
