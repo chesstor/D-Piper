@@ -46,7 +46,7 @@ To make a D-Piper diagram just follow these steps:
     
 
 ## Authors
-All authors belong to IGME Geological Survey of Spain. C/Ríos Rosas 23, 28003 Madrid, Spain
+All authors belong to the Geological Survey of Spain (IGME). C/Ríos Rosas 23, 28003 Madrid, Spain
 
 * M. González-Jiménez         miguel.gonzalez@igme.es
 
