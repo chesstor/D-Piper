@@ -42,7 +42,7 @@ The *D_Piper_v1_options.txt* file must be in ASCII format, separated by semicolo
 It is a self-explanatory file that shows all the options of the program.
 It is essential to comply with the file format to avoid execution errors.
 
-The contents of this file are explained at the end of this document. Options that can be modified are shown in <span style="color:red;">red</span> , explanatory text and guidelines are shown in $\color{blue}{blue}$, and variable names in **_black_**.
+The contents of this file are explained at the end of this document. Options that can be modified are shown in <span style="color: red;">red</span> , explanatory text and guidelines are shown in $\color{blue}{blue}$, and variable names in **_black_**.
 
 <img width="100%" src="Images/Image3.svg">
 
