@@ -36,7 +36,6 @@ The structure of the data file should be as follows:
 *Group*: Each sample can belong to a different group. Up to nine groups can be differentiated. Although no error will be shown, setting more groups will create overlap problems.<br>
 *Eight columns with analytical results*. The ion content should be expressed in mg/L (milligrams per liter) or ppm (parts per million).<br>
 
-
 ### 3. Preparing the _Options_ file:
 
 The *D_Piper_v1_options.txt* file must be in ASCII format, separated by semicolon (;)
