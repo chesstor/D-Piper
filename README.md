@@ -11,7 +11,7 @@ Keep the file structure as shown in the figure:
 <img align="center" width="60%"  src="Readme_images/Image1.png">
 
  * The input analytical data files must be saved in the *Data* folder. The sample files used in the article to make Figures 2, 3, 4 and 5 can be found in this folder.
- * The D-Piper diagrams will be saved in the *Graphics* folder.
+ * The D-Piper diagrams will be saved in the *Graphics* folder. It currently contains some example images.
  * The *pycache* folder is created automatically and it is required for the *D_Piper_v1.py* script to run successfully.
  * The file *D_Piper_v1_options.txt* contains the necessary instructions and explanations to build the desired D-Piper diagram.
  * The file *D_Piper_v1.py* is the script that you have to run in Python to build a D-Piper diagram. The script is widely commented.
