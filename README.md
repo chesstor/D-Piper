@@ -1,6 +1,6 @@
 # D-Piper - A modified Piper diagram
 ## Overview
-D-Piper is a free source code developed in Python 3 that allows to represent large sets of hydrochemical analyses avoiding the problem of overlapping.
+D-Piper is a free source code developed in Python 3 that allows to represent large hydrochemical data sets throughout point density diagrams. Multiple methods of data distribution can be chosen for data visualization.
 
 ## How does it work?
 To make a D-Piper diagram just follow these steps:
