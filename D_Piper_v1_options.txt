@@ -1,0 +1,66 @@
+SCRIPT D_Piper: OPTIONS FILE
+----------------------------------------------------------------------------------------------------------
+This file lists the options for building the D-Piper diagram.
+It is essential to respect the format to avoid errors in the program execution.
+For avoiding overwritten conflicts, diagrams' title must be different.
+-----------------------------------------------------------------------------------------------------------------
+;
+-----------------------------------------------------------------------------------------------------------------
+---- GENERAL OPTIONS --------------------------------------------------------------------------------------------
+Title_Piper;           ;S-Piper;                 Piper Chart Title
+Title_DPiper;          ;D-Piper;                 D_Piper Chart Title
+Bins_graph;            ;50;		         		 Discretization of the axes
+Point_Size;            ;2;                       The size of the point that represents the analysis on the charts
+Piper_D_Transparency;  ;1;                       Transparency of the D_Piper. Recommended values from 0.01 to 0.2
+Piper_Transparency;    ;0.1;                     Transparency of the Piper. Recommended values from 0.01 to 0.2
+Color_Unique;          ;black;                   Color of dots when different groups are not drawn
+ColorMap;              ;YlOrRd;                  Color map to draw the charts. Sequential, diverging and categorical palettes
+;                                                 --- are allowed. Note that if a categorical palette is used, the number of 
+;                                                 --- colors should be higher or equal than the number of intervals.
+;                                                 --- Examples: Greens, Greys, Blues, Reds, YlOrBr, Spectral, YlGn, etc
+;                                                 --- For more info, see: https://matplotlib.org/3.1.1/tutorials/colors/colormaps.html
+;
+---- GROUP OPTIONS --------------------------------------------------------------------------------------------
+Separate_Groups;       ;N;                       		Paint each group of one color (Y) or all of the same (N)
+WhatGroupToDraw;       ;1,2,3;               	 		Separated by commas. Select which groups to draw (follow input data
+;                                                 		 --- nomenclature)
+GroupsNames;           ;Group 1,Group 2,Group 3; 		Group names of the indicated groups to draw
+;                                                 		 --- Have to match 'WhatGroupToDraw' length
+SetColors;             ;blue,green,red,yellow,orange;	Colors set of data groups. Have to match 'WathGroupToDraw' length
+Identificate;          ;N;                       		Identify analyses on Piper's graph? (Y/N)     
+LabelColor;            ;green;                   		Color of labels showing each analysis
+Combinate;	       ;Y;                       	 		Overlap scatter diagram over D-Piper? (Y/N)
+Combination_title;     ;Combination Diagram;     		Combination Diagram Title
+;
+---- POINT DISTRIBUTION OPTIONS AND GRAPHIC OPTIONS ------------------------------------------------------------
+Transform_Log;         ;N;                       Make the logarithmic transformation (base 10) of the input data? (Y/N)
+DivisionMethod;        ;Geometric;               Options: Manual, Equidistant, Quantiles, Geometric, Jenks or DStandard
+Intervals;	       ;;			 				 Number of discret intervals (ignored when is set to Manual)
+-- Manual Options:
+Manual_Steps_Def;      ;1,89,150,600,800,1267;   Separated by commas.The number of intervals will be equal to number
+;					         					  --- of 'Manual_Steps_Def' less one
+-- Quantiles Options:
+InterpolationMet;      ;linear;                  Specifies the interpolation method to use when the desired quantile lies
+;						 						  --- between two data points. See numpy documentation at
+;						 						  --- https://numpy.org/devdocs/reference/generated/numpy.quantile.html
+;												  --- Options: linear, lower, higher, midpoint, nearest
+-- Standard Deviation Options:
+DSfactor;              ;0.25;                    Number of standard deviations for building intervals (e.g. 1, 1/2, 1/3, ...)    
+-- Graphic Option:
+Grid;                  ;N;						 Show grid? Grid fitted to cells. (Y/N)      
+;
+---- FRECUENCY HISTOGRAM  -------------------------------------------------------------------------------------
+ShowHisto;             ;Y;                      Draw the frecuency hystogram?  (Y/N)
+ColorHisto;            ;green;                  Color of frequency histogram bars
+BinsHisto;             ;50;                     Number of bars: auto or integer
+RangeHisto;            ;0;100;                  Tuple: x.min  x.max if x.min=0 and x.max=0 then range is auto
+LogHisto;              ;N;                      Put the Y axis in logarithmic units? (Y/N)
+;
+---- FILE OPTIONS --------------------------------------------------------------------------------------------
+File_Input;            ;Dataset_Fig2b&3.txt;    Name of the input data file
+Save_Files;            ;N;                      Save the information table that has been created? (Y/N)
+;
+---- OUTPUT GRAPHIC FILE OPTIONS------------------------------------------------------------------------------
+Store_Graph;           ;Y;                      Save the graphics to the hard drive? Y/N
+Extension_Graph;       ;png;                    Output graphic format. Options: jpg, png, svg, pdf, ps
+Graphic_Res;           ;300;                    Resolution of the chart saved in the file
