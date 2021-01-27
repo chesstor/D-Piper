@@ -8,7 +8,7 @@ To make a D-Piper diagram just follow these steps:
 To do so, copy and unzip to the desired location the *D_Piper_v1.zip* file.
 Keep the file structure as shown in the figure:
 
-<img align="center" width="60%"  src="Images/Image1.png">
+<img align="center" width="60%"  src="Readme_images/Image1.png">
 
  * The input analytical data files must be saved in the *Data* folder. The sample files used in the article to make Figures 2, 3, 4 and 5 can be found in this folder.
  * The D-Piper diagrams will be saved in the *Graphics* folder.
@@ -30,7 +30,7 @@ The structure of the data file should be as follows:
 * TAB-separated ASCII file
 * It must contain ten columns:
       
-<img align="center" width="80%" src="Images/Image2.png">
+<img align="center" width="80%" src="Readme_images/Image2.png">
 
 *Identifier*: sample identification number.<br>
 *Group*: Each sample can belong to a different group. Up to nine groups can be differentiated. Although no error will be shown, setting more groups will create overlap problems.<br>
@@ -44,7 +44,7 @@ It is essential to comply with the file format to avoid execution errors.
 
 The contents of this file are explained at the end of this document. Options that can be modified are shown in red, explanatory text and guidelines are shown in blue, and variable names in black.
 
-<img width="100%" src="Images/Image3.svg">
+<img width="100%" src="Readme_images/Image3.svg">
 
 ## Authors
 All authors belong to IGME Geological Survey of Spain. C/Ríos Rosas 23, 28003 Madrid, Spain
