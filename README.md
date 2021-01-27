@@ -5,7 +5,6 @@ D-Piper is a free source code developed in Python 3 that allows to represent lar
 ## How does it work?
 To make a D-Piper diagram just follow these steps:
 ### 1. Prepare the file structure:
-To do so, copy and unzip to the desired location the *D_Piper_v1.zip* file.
 Keep the file structure as shown in the figure:
 
 <img align="center" width="60%"  src="Readme_images/Image1.png">
