@@ -13,7 +13,7 @@ Bins_graph;            ;50;		         		 Discretization of the axes
 Point_Size;            ;2;                       The size of the point that represents the analysis on the charts
 Piper_D_Transparency;  ;1;                       Transparency of the D_Piper. Recommended values from 0.01 to 0.2
 Piper_Transparency;    ;0.1;                     Transparency of the Piper. Recommended values from 0.01 to 0.2
-Color_Unique;          ;black;                   Color of dots when different groups are not drawn
+Color_Unique;          ;blue;                   Color of dots when different groups are not drawn
 ColorMap;              ;YlOrRd;                  Color map to draw the charts. Sequential, diverging and categorical palettes
 ;                                                 --- are allowed. Note that if a categorical palette is used, the number of 
 ;                                                 --- colors should be higher or equal than the number of intervals.
@@ -35,7 +35,7 @@ Combination_title;     ;Combination Diagram;     		Combination Diagram Title
 ---- POINT DISTRIBUTION OPTIONS AND GRAPHIC OPTIONS ------------------------------------------------------------
 Transform_Log;         ;N;                       Make the logarithmic transformation (base 10) of the input data? (Y/N)
 DivisionMethod;        ;Geometric;               Options: Manual, Equidistant, Quantiles, Geometric, Jenks or DStandard
-Intervals;	       ;;			 				 Number of discret intervals (ignored when is set to Manual)
+Intervals;	       ;6;			 				 Number of discret intervals (ignored when is set to Manual)
 -- Manual Options:
 Manual_Steps_Def;      ;1,89,150,600,800,1267;   Separated by commas.The number of intervals will be equal to number
 ;					         					  --- of 'Manual_Steps_Def' less one
