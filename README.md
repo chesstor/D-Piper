@@ -11,12 +11,11 @@ Keep the file structure as shown in the figure:
 
  * The input analytical data files must be saved in the *Data* folder. The sample files used in the article to make Figures 2, 3, 4 and 5 can be found in this folder.
  * The D-Piper diagrams will be saved in the *Graphics* folder. It currently contains some example images.
- * The *pycache* folder is created automatically and it is required for the *D_Piper_v1.py* script to run successfully.
  * The file *D_Piper_v1_options.txt* contains the necessary instructions and explanations to build the desired D-Piper diagram.
  * The file *D_Piper_v1.py* is the script that you have to run in Python to build a D-Piper diagram. The script is widely commented.
  * The *Tools.py* file is an auxiliary Python code that act as a module and contains all the functions with which the *D_Piper_v1.py* file operates.
  
-Do not delete or change any of the above files or folders. If necessary, you can add other folders or files. This will not affect the program execution.
+Do not delete or change any of the above files or folders. If necessary, you can add other folders or files. Note that automatically a *pycache* folder is created, requiered for an optimal execution of the program.
  
 The script always reads the drawing options from the *D_Piper_v1_options.txt* file. If you want to save a set of options, you must do so by renaming the file or saving it to another location. For further use, you will have to name it as the original one (*D_Piper_v1_options.txt*) or update the new name in line 65 of the *D_Piper_v1.py* file.
 
