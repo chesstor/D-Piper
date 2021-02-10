@@ -19,7 +19,7 @@ Do not delete or change any of the above files or folders. If necessary, you can
  
 The script always reads the drawing options from the *D_Piper_v1_options.txt* file. If you want to save a set of options, you must do so by renaming the file or saving it to another location. For further use, you will have to name it as the original one (*D_Piper_v1_options.txt*) or update the new name in line 65 of the *D_Piper_v1.py* file.
 
-### 2. Preparing de data file:
+### 2. Preparing the data file:
 
 The data file must be in ASCII format and saved in the *Data* folder.
 The data file can have any name.
