@@ -62,7 +62,7 @@ class Manipulate (object):
         self.show_histo = True
         self.h_color = '#3EA948'   # soft green
         self.h_bins = 32           # Number of bars: auto or integer
-        self.h_range = (0,80)      # Tuple: x.min  x.max if x.min=0 and x.max=0 then range is auto
+        self.h_range = (0,80)      # Tuple: x.min  x.max
         self.h_log = False         # Put the Y axis in logarithmic units?
         #######################################################################
         # Read file:
