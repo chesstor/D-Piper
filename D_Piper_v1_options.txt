@@ -54,7 +54,7 @@ Grid;                  ;N;			 Show grid? Grid fitted to cells. (Y/N)
 ShowHisto;             ;Y;                      Draw the frecuency hystogram?  (Y/N)
 ColorHisto;            ;green;                  Color of frequency histogram bars
 BinsHisto;             ;50;                     Number of bars: auto or integer
-RangeHisto;            ;0;100;                  Tuple: x.min  x.max if x.min=0 and x.max=0 then range is auto
+RangeHisto;            ;0;100;                  Tuple: x.min  x.max
 LogHisto;              ;N;                      Put the Y axis in logarithmic units? (Y/N)
 ;
 ---- FILE OPTIONS --------------------------------------------------------------------------------------------
