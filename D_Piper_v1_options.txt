@@ -9,16 +9,17 @@ For avoiding overwritten conflicts, diagrams' title must be different.
 ---- GENERAL OPTIONS --------------------------------------------------------------------------------------------
 Title_Piper;           ;S-Piper;                 Piper Chart Title
 Title_DPiper;          ;D-Piper;                 D_Piper Chart Title
-Bins_graph;            ;50;		         		 Discretization of the axes
+Bins_graph;            ;50;		         Discretization of the axes
 Point_Size;            ;2;                       The size of the point that represents the analysis on the charts
-Piper_D_Transparency;  ;1;                       Transparency of the D_Piper. Recommended values from 0.01 to 0.2
-Piper_Transparency;    ;0.1;                     Transparency of the Piper. Recommended values from 0.01 to 0.2
-Color_Unique;          ;blue;                   Color of dots when different groups are not drawn
-ColorMap;              ;YlOrRd;                  Color map to draw the charts. Sequential, diverging and categorical palettes
+Piper_D_Transparency;  ;1;                       Transparency of D_Piper cells. Recommended values close to 1.
+Piper_Transparency;    ;0.5;                     Transparency of the Piper points. Recommended values from 0.7 to 1 
+Color_Unique;          ;blue;                    Color of dots when different groups are not drawn
+ColorMap;              ;Spectral;                  Color map to draw the charts. Sequential, diverging and categorical palettes
 ;                                                 --- are allowed. Note that if a categorical palette is used, the number of 
 ;                                                 --- colors should be higher or equal than the number of intervals.
 ;                                                 --- Examples: Greens, Greys, Blues, Reds, YlOrBr, Spectral, YlGn, etc
 ;                                                 --- For more info, see: https://matplotlib.org/3.1.1/tutorials/colors/colormaps.html
+Reverse_ColorMap;      ;Y;                      ;Invert the order of the colors in the color palette? (Y/N) 
 ;
 ---- GROUP OPTIONS --------------------------------------------------------------------------------------------
 Separate_Groups;       ;N;                       		Paint each group of one color (Y) or all of the same (N)
@@ -27,9 +28,9 @@ WhatGroupToDraw;       ;1,2,3;               	 		Separated by commas. Select whi
 GroupsNames;           ;Group 1,Group 2,Group 3; 		Group names of the indicated groups to draw
 ;                                                 		 --- Have to match 'WhatGroupToDraw' length
 SetColors;             ;blue,green,red,yellow,orange;	Colors set of data groups. Have to match 'WathGroupToDraw' length
-Identificate;          ;N;                       		Identify analyses on Piper's graph? (Y/N)     
+Identifier;          ;N;                       		Identify analyses on Piper's graph? (Y/N)     
 LabelColor;            ;green;                   		Color of labels showing each analysis
-Combinate;	       ;Y;                       	 		Overlap scatter diagram over D-Piper? (Y/N)
+Combine;	       ;Y;                       	 		Overlap scatter diagram over D-Piper? (Y/N)
 Combination_title;     ;Combination Diagram;     		Combination Diagram Title
 ;
 ---- POINT DISTRIBUTION OPTIONS AND GRAPHIC OPTIONS ------------------------------------------------------------
@@ -47,7 +48,7 @@ InterpolationMet;      ;linear;                  Specifies the interpolation met
 -- Standard Deviation Options:
 DSfactor;              ;0.25;                    Number of standard deviations for building intervals (e.g. 1, 1/2, 1/3, ...)    
 -- Graphic Option:
-Grid;                  ;N;						 Show grid? Grid fitted to cells. (Y/N)      
+Grid;                  ;N;			 Show grid? Grid fitted to cells. (Y/N)      
 ;
 ---- FRECUENCY HISTOGRAM  -------------------------------------------------------------------------------------
 ShowHisto;             ;Y;                      Draw the frecuency hystogram?  (Y/N)
@@ -63,4 +64,4 @@ Save_Files;            ;N;                      Save the information table that 
 ---- OUTPUT GRAPHIC FILE OPTIONS------------------------------------------------------------------------------
 Store_Graph;           ;Y;                      Save the graphics to the hard drive? Y/N
 Extension_Graph;       ;png;                    Output graphic format. Options: jpg, png, svg, pdf, ps
-Graphic_Res;           ;300;                    Resolution of the chart saved in the file
+Graphic_Res;           ;500;                    Resolution of the chart saved in the file
