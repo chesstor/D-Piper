@@ -51,7 +51,7 @@ The contents of this file are explained at the end of this document. Options tha
 ## Authors
 All authors belong to IGME Geological Survey of Spain. C/Ríos Rosas 23, 28003 Madrid, Spain
 
-* M. González-Jiménez         miguel.gonzalez@igme.es
+* M. González-Jiménez         miguigonn@gmail.com
 
 * L. Moreno Merino            l.moreno@igme.es
 
