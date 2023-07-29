@@ -1,10 +1,14 @@
 # D-Piper - A modified Piper diagram
+![example_image](https://github.com/chesstor/D-Piper/assets/75794654/c26938a5-1f0d-4ad3-9a7a-6386193d1d72)
 ## Overview
 D-Piper is a free source code developed in Python 3.7 that allows to represent large hydrochemical data sets throughout point density diagrams. Multiple methods of data distribution can be chosen for data visualization.
 
 ## Paper
-Moreno Merino, L.; Aguilera, H.; González Jiménez, M.; Díaz Losada, E. 2021 D-Piper, a modified Piper
-diagram to represent big sets of hydrochemical analyses. Environmental Modelling and Software, 138. https://doi.org/10.1016/j.envsoft.2021.104979
+If you use the program in one of your studies, please cite this paper:
+* Moreno Merino, L.; Aguilera, H.; González Jiménez, M.; Díaz Losada, E. 2021 D-Piper, a modified Piper
+diagram to represent big sets of hydrochemical analyses. Environmental Modelling and Software, 138.
+
+    https://doi.org/10.1016/j.envsoft.2021.104979
 
 ## How to install
 
@@ -97,9 +101,9 @@ The contents of this file are explained at the end of this document. Options tha
 The program simply works by running the *D_Piper_v1.py* script.
 This can be ahieved from the Anaconda prompt (with the correct env activated and python-path active) or from any development platform (Spyder, PYCharm...).
 
-The execution from the Anaconda Prompt shell (or other shell) could be done by simply running:
-`python D_Piper_v1.py`
+The execution from the **Anaconda Prompt** shell (or other shell) could be done by simply running:
 
+`>>> python D_Piper_v1.py`
 
 ## Get in Touch
 
