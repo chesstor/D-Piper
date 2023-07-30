@@ -12,7 +12,7 @@ diagram to represent big sets of hydrochemical analyses. Environmental Modelling
 
 ## How to install
 
-The program could be easily **installed** by:
+The program could be easily **installed** in **Windows** operative system by:
 
 * **Download** and unzip the repositoy [*zip file*](https://github.com/chesstor/D-Piper/archive/refs/heads/main.zip) in your working directory.
 
@@ -37,11 +37,7 @@ For avoiding conflicts among the dependencies and Python versions while running 
 or
 * **Option 2**. From an [*yml file*](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file) using the *DPiper.yml* file included in the repository. This option will create an environment with all the packages and its versions included in the file. The first line of the *yml* file sets the new environment's name. Be free to change it for other env name.  Simply run the following on the Anaconda Prompt.:
 
-    `conda env create -f DPiper.yml`
-
-
-
-The program has been programmed and tested in a **Windowsx64** machine. The performance in a Linux/Unix platform is not granted.
+    `conda env create -f dpiper.yml`
 
 ## Dependecies:
 The program relies on Python standard libraries. The library ´jenkspy` is used when choosing Jenk's division method.
