@@ -3,16 +3,9 @@
 ## Overview
 D-Piper is a free source code developed in Python 3.7 that allows to represent large hydrochemical data sets throughout point density diagrams. Multiple methods of data distribution can be chosen for data visualization.
 
-## Paper
-If you use the program in one of your studies, please cite this paper:
-* Moreno Merino, L.; Aguilera, H.; González Jiménez, M.; Díaz Losada, E. 2021 D-Piper, a modified Piper
-diagram to represent big sets of hydrochemical analyses. Environmental Modelling and Software, 138.
-
-    https://doi.org/10.1016/j.envsoft.2021.104979
-
 ## How to install
 
-The program could be easily **installed** in **Windows** operative system by:
+The program could be easily **installed** in a **Windows** system by:
 
 * **Download** and unzip the repositoy [*zip file*](https://github.com/chesstor/D-Piper/archive/refs/heads/main.zip) in your working directory.
 
@@ -27,7 +20,7 @@ D-Piper have been programmed using **Python `3.7`**, and depends mainly on commo
 
 For installing, running and managing Python packages, we recommend using [Anaconda](https://docs.anaconda.com/free/anaconda/install/windows/) or [Miniconda](https://docs.conda.io/en/latest/miniconda.html#windows-installers) distribution. The latter is a lighter release of Anaconda. 
 
-For avoiding conflicts among the dependencies and Python versions while running D-Piper, it's recommended to create a **new conda environment** with the same Python and packages versions in which it was programmed. You can do this:
+For avoiding conflicts among the dependencies and Python versions while running D-Piper, it's recommended to create a **new conda environment** with the same Python and packages versions in which it was programmed. You can do this by:
 
 * **Option 1**. [*Manually*](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-with-commands) from the Anaconda Prompt by running:
 
@@ -35,12 +28,12 @@ For avoiding conflicts among the dependencies and Python versions while running 
 `
 
 or
-* **Option 2**. From an [*yml file*](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file) using the *DPiper.yml* file included in the repository. This option will create an environment with all the packages and its versions included in the file. The first line of the *yml* file sets the new environment's name. Be free to change it for other env name.  Simply run the following on the Anaconda Prompt.:
+* **Option 2**. From an [*yml file*](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file) using the *DPiper.yml* file included in the repository. This option will create an environment with all the packages and its versions included in the file. The first line of the *yml* file sets the new environment's name. Be free to change it for other env name.  Simply run the following line on the Anaconda Prompt from within the folder that holds the *yml* file:
 
     `conda env create -f dpiper.yml`
 
 ## Dependecies:
-The program relies on Python standard libraries. The library ´jenkspy` is used when choosing Jenk's division method.
+The program relies on Python standard libraries. The library `jenkspy` is used when choosing Jenk's division method.
 
 _ `Numpy 1.17.4`
 
@@ -76,7 +69,7 @@ The structure of the data file should be as follows:
 
 * TAB-separated ASCII file
 * It must contain ten columns:
-      
+
 <img align="center" width="80%" src="Readme_images/Image2.png">
 
 *Identifier*: sample identification number.<br>
@@ -109,7 +102,7 @@ The execution from the **Anaconda Prompt** shell (or other shell) could be done 
 ## Authors
 All authors belong to IGME Geological Survey of Spain. C/Ríos Rosas 23, 28003 Madrid, Spain
 
-* M. González-Jiménez         miguigonn@gmail.com
+* M. González-Jiménez         miguel.gj@ipna.csic.es
 
 * L. Moreno Merino            l.moreno@igme.es
 
@@ -117,6 +110,12 @@ All authors belong to IGME Geological Survey of Spain. C/Ríos Rosas 23, 28003 M
 
 * E. Díaz Losada              elisabeth.diaz@igme.es
 
+## Paper
+If you use the program in one of your studies, please cite this paper:
+* Moreno Merino, L.; Aguilera, H.; González Jiménez, M.; Díaz Losada, E. 2021 D-Piper, a modified Piper
+diagram to represent big sets of hydrochemical analyses. Environmental Modelling and Software, 138.
+
+    https://doi.org/10.1016/j.envsoft.2021.104979
 
 ## Copyright
 License: GPLv3 

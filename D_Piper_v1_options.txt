@@ -27,16 +27,16 @@ WhatGroupToDraw;       ;1,2,3;               	 		Separated by commas. Select whi
 ;                                                 		 --- nomenclature)
 GroupsNames;           ;Group 1,Group 2,Group 3; 		Group names of the indicated groups to draw
 ;                                                 		 --- Have to match 'WhatGroupToDraw' length
-SetColors;             ;blue,green,red,yellow,orange;	Colors set of data groups. Have to match 'WathGroupToDraw' length
-Identifier;          ;N;                       		Identify analyses on Piper's graph? (Y/N)     
+SetColors;             ;blue,green,red;	Colors set of data groups. Have to match 'WathGroupToDraw' length
+Identifier;            ;N;                       		Identify analyses on Piper's graph? (Y/N)     
 LabelColor;            ;green;                   		Color of labels showing each analysis
-Combine;	       ;Y;                       	 		Overlap scatter diagram over D-Piper? (Y/N)
+Combine;	           ;Y;                     	 		Overlap scatter diagram over D-Piper? (Y/N)
 Combination_title;     ;Combination Diagram;     		Combination Diagram Title
 ;
 ---- POINT DISTRIBUTION OPTIONS AND GRAPHIC OPTIONS ------------------------------------------------------------
 Transform_Log;         ;N;                       Make the logarithmic transformation (base 10) of the input data? (Y/N)
-DivisionMethod;        ;Manual;               Options: Manual, Equidistant, Quantiles, Geometric, Jenks or DStandard
-Intervals;	       ;8;			 				 Number of discret intervals (ignored when is set to Manual)
+DivisionMethod;        ;geometric;               Options: Manual, Equidistant, Quantiles, Geometric, Jenks or DStandard
+Intervals;	       ;4;			 				 Number of discret intervals (ignored when is set to Manual)
 -- Manual Options:
 Manual_Steps_Def;      ;1,2,5,8,14,22,40,67;   Separated by commas.The number of intervals will be equal to number
 ;					         					  --- of 'Manual_Steps_Def' less one
