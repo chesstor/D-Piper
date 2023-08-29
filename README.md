@@ -49,7 +49,7 @@ To make a D-Piper diagram just follow these steps:
 ### 1. Prepare the file structure:
 Keep the file structure as shown in the figure:
 
-<img align="center" width="60%"  src="Readme_images/Image1.png">
+![Image1](https://github.com/chesstor/D-Piper/assets/75794654/00fe7dc2-b4ee-457e-8334-b1e1d153c033)
 
  * The input analytical data files must be saved in the *Data* folder. The sample files used in the article to make Figures 2, 3, 4 and 5 can be found in this folder.
  * The D-Piper diagrams will be saved in the *Graphics* folder. It currently contains some example images.
@@ -70,7 +70,7 @@ The structure of the data file should be as follows:
 * TAB-separated ASCII file
 * It must contain ten columns:
 
-<img align="center" width="80%" src="Readme_images/Image2.png">
+![Image2](https://github.com/chesstor/D-Piper/assets/75794654/30a48fdc-244b-47a0-82f3-d17dd18ef6e5)
 
 *Identifier*: sample identification number.<br>
 *Group*: Each sample can belong to a different group. Up to nine groups can be differentiated. Although no error will be shown, setting more groups will create overlap problems.<br>
@@ -84,7 +84,7 @@ It is essential to comply with the file format to avoid execution errors.
 
 The contents of this file are explained at the end of this document. Options that can be modified are shown in red, explanatory text and guidelines are shown in blue, and variable names in black.
 
-<img width="100%" src="Readme_images/Image3.svg">
+![Image3](https://github.com/chesstor/D-Piper/assets/75794654/ed681f19-33d2-463e-83e4-dff4f76100ac)
 
 ### 4. Run the program:
 The program simply works by running the *D_Piper_v1.py* script.
