@@ -7,13 +7,13 @@ For avoiding overwritten conflicts, diagrams' title must be different.
 ;
 -----------------------------------------------------------------------------------------------------------------
 ---- GENERAL OPTIONS --------------------------------------------------------------------------------------------
-Title_Piper;           ;S-Piper;                 Piper Chart Title
-Title_DPiper;          ;D-Piper;                 D_Piper Chart Title
-Bins_graph;            ;50;		         Discretization of the axes
+Title_Piper;           ;Prueba_1_SPiper;                 Piper Chart Title
+Title_DPiper;          ;Prueba_1_Dpiper;                 D_Piper Chart Title
+Bins_graph;            ;20;		         Discretization of the axes
 Point_Size;            ;2;                       The size of the point that represents the analysis on the charts
 Piper_D_Transparency;  ;1;                       Transparency of D_Piper cells. Recommended values close to 1.
 Piper_Transparency;    ;0.5;                     Transparency of the Piper points. Recommended values from 0.7 to 1 
-Color_Unique;          ;blue;                    Color of dots when different groups are not drawn
+Color_Unique;          ;black;                    Color of dots when different groups are not drawn
 ColorMap;              ;Spectral;                  Color map to draw the charts. Sequential, diverging and categorical palettes
 ;                                                 --- are allowed. Note that if a categorical palette is used, the number of 
 ;                                                 --- colors should be higher or equal than the number of intervals.
@@ -27,18 +27,18 @@ WhatGroupToDraw;       ;1,2,3;               	 		Separated by commas. Select whi
 ;                                                 		 --- nomenclature)
 GroupsNames;           ;Group 1,Group 2,Group 3; 		Group names of the indicated groups to draw
 ;                                                 		 --- Have to match 'WhatGroupToDraw' length
-SetColors;             ;blue,green,red,yellow,orange;	Colors set of data groups. Have to match 'WathGroupToDraw' length
-Identifier;          ;N;                       		Identify analyses on Piper's graph? (Y/N)     
+SetColors;             ;blue,green,red;	Colors set of data groups. Have to match 'WathGroupToDraw' length
+Identifier;            ;N;                       		Identify analyses on Piper's graph? (Y/N)     
 LabelColor;            ;green;                   		Color of labels showing each analysis
-Combine;	       ;Y;                       	 		Overlap scatter diagram over D-Piper? (Y/N)
+Combine;	           ;Y;                     	 		Overlap scatter diagram over D-Piper? (Y/N)
 Combination_title;     ;Combination Diagram;     		Combination Diagram Title
 ;
 ---- POINT DISTRIBUTION OPTIONS AND GRAPHIC OPTIONS ------------------------------------------------------------
 Transform_Log;         ;N;                       Make the logarithmic transformation (base 10) of the input data? (Y/N)
-DivisionMethod;        ;Geometric;               Options: Manual, Equidistant, Quantiles, Geometric, Jenks or DStandard
-Intervals;	       ;6;			 				 Number of discret intervals (ignored when is set to Manual)
+DivisionMethod;        ;geometric;               Options: Manual, Equidistant, Quantiles, Geometric, Jenks or DStandard
+Intervals;	       ;4;			 				 Number of discret intervals (ignored when is set to Manual)
 -- Manual Options:
-Manual_Steps_Def;      ;1,89,150,600,800,1267;   Separated by commas.The number of intervals will be equal to number
+Manual_Steps_Def;      ;1,2,5,8,14,22,40,67;   Separated by commas.The number of intervals will be equal to number
 ;					         					  --- of 'Manual_Steps_Def' less one
 -- Quantiles Options:
 InterpolationMet;      ;linear;                  Specifies the interpolation method to use when the desired quantile lies
@@ -51,7 +51,7 @@ DSfactor;              ;0.25;                    Number of standard deviations f
 Grid;                  ;N;			 Show grid? Grid fitted to cells. (Y/N)      
 ;
 ---- FRECUENCY HISTOGRAM  -------------------------------------------------------------------------------------
-ShowHisto;             ;Y;                      Draw the frecuency hystogram?  (Y/N)
+ShowHisto;             ;N;                      Draw the frecuency hystogram?  (Y/N)
 ColorHisto;            ;green;                  Color of frequency histogram bars
 BinsHisto;             ;50;                     Number of bars: auto or integer
 RangeHisto;            ;0;100;                  Tuple: x.min  x.max
@@ -59,7 +59,7 @@ LogHisto;              ;N;                      Put the Y axis in logarithmic un
 ;
 ---- FILE OPTIONS --------------------------------------------------------------------------------------------
 File_Input;            ;Dataset_Fig2b&3.txt;    Name of the input data file
-Save_Files;            ;N;                      Save the information table that has been created? (Y/N)
+Save_Files;            ;Y;                      Save the information table that has been created? (Y/N)
 ;
 ---- OUTPUT GRAPHIC FILE OPTIONS------------------------------------------------------------------------------
 Store_Graph;           ;Y;                      Save the graphics to the hard drive? Y/N

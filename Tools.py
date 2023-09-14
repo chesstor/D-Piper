@@ -168,7 +168,7 @@ class Manipulate (object):
             matrix = np.flip(binned, axis = 0).astype(int)
             # Generate a boolean matrix (same shape than 'matrix') and select
             # lower triangle values:
-            condition = np.tril(np.ones((matrix.shape))).astype(np.bool)
+            condition = np.tril(np.ones((matrix.shape))).astype(bool)
             matrix    = np.where(condition, matrix, np.nan)
             matrix    = np.flip(np.transpose(matrix))
 
@@ -180,7 +180,7 @@ class Manipulate (object):
 
             matrix = np.flip(binned, axis = 0).astype(int)
 
-            condition = np.tril(np.ones((matrix.shape))).astype(np.bool)
+            condition = np.tril(np.ones((matrix.shape))).astype(bool)
             matrix    = np.where(condition, matrix, np.nan)
             matrix    = np.flip(np.transpose(matrix))
 
@@ -308,7 +308,7 @@ class D_methods(Manipulate):
         #######################################################################
         ######## -------- Default Division Method parameters -------- #########
         #######################################################################
-        self.kind   = 'Geometric'       # Distribution method:
+        self.kind   = 'geometric'       # Distribution method:
         self.k      = 6                 # Number of classes
         self.factor = 0.5               # Factor for DStandard method
         self.q_interpolator = 'nearest' # Quantile interpolation method
@@ -486,17 +486,18 @@ class D_methods(Manipulate):
 
         self.H, self.L = self.matrix.max(), self.matrix.min()
 
-        if  self.kind == 'Geometric':
+        self.kind = self.kind.lower()
+        if  self.kind == 'geometric':
             bp, text = D_methods.geometric(self)
-        elif self.kind == 'Equidistant':
+        elif self.kind == 'equidistant':
             bp, text = D_methods.equidistant(self)
-        elif self.kind == 'Manual':
+        elif self.kind == 'manual':
             bp, text = D_methods.manual(self)
-        elif self.kind == 'Jenks':
+        elif self.kind == 'jenks':
             bp, text = D_methods.jenks(self)
-        elif self.kind == 'DStandard':
+        elif self.kind == 'dstandard':
             bp, text = D_methods.DStandard(self)
-        elif self.kind == 'Quantiles':
+        elif self.kind == 'quantiles':
             bp, text = D_methods.quantiles(self)
         else:
             raise ValueError('There is not a distribution method called that name.')
@@ -895,12 +896,12 @@ class Piper(D_methods):
         ############## ------- Obtaining Cell Values ------- ##################
         #######################################################################
         # ---------------------------- Cation ---------------------------------
-        condition = np.tril(np.ones((cat.shape)), k = -1).astype(np.bool)
+        condition = np.tril(np.ones((cat.shape)), k = -1).astype(bool)
         m_cat     = np.rot90(np.where(condition, cat, np.nan), k = 1, axes = (1,0))
         m_cat     = m_cat[~np.isnan(m_cat)]  # Flatten matrix and delete nan values.
         
         # ---------------------------- Anion ----------------------------------
-        condition = np.tril(np.ones((an.shape)), k = -1).astype(np.bool)
+        condition = np.tril(np.ones((an.shape)), k = -1).astype(bool)
         m_an      = np.rot90(np.where(condition, an, np.nan), k = 1, axes = (1,0))
         m_an      = m_an[~np.isnan(m_an)]   	# Flatten matrix and delete nan values.
          
